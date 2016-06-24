@@ -1,0 +1,21 @@
+Some notes on command line parsing
+----------------------------------
+
+The functions in the "cline" package implement a slightly extended version of
+standard Unix command line parsing.
+
+Command lines are first parsed into a series of words, separated by blank
+space. The first word on a line is taken as the command name.
+
+Subsequent words may be flags, values, or arguments. Additionally the
+standard operators to redirect standard input and output streams are 
+supported.
+
+Flags start with the character '-' (minus). The value taken by the flag 
+(if any) may directly follow the flag name with no separating blanks. 
+Otherwise it will be assumed to be contained in the following word on the 
+command line.
+
+Anything which is not a flag is taken to be an argument. Order of arguments
+is generally significant. An absent argument can be indicated by the single 
+character '.' (period or full-stop).
