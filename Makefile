@@ -10,7 +10,7 @@ UNIFORM_RANDOM = drand48
 RANDOM_SEED = srand48
 
 snphap: snphap.o snphapfun.o cline.o 
-	$(LD) $(LD_FLAGS)  -o snphap snphap.o snphapfun.o cline.o 
+	$(LD) -o snphap snphap.o snphapfun.o cline.o $(LD_FLAGS)  
 
 snphap.o : snphap.c snphap.h cline.h 
 	$(CMP) $(CMP_FLAGS)  -DSEED=$(RANDOM_SEED) -DVERSION=$(VER) snphap.c
