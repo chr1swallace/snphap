@@ -1,7 +1,7 @@
 * SNPHAP
 Copy of snphap-1.3.1 source, written by David Clayton, put here because existing website is closing.
 
-I am not a maintainer, but a user who wants to keep a copy where I can install from in future.  What follow's is David's documentation.
+I am not a maintainer, but a user who wants to keep a copy where I can install from in future.  What follows is David's documentation.
 
 
 * A program for estimating frequencies of large haplotypes of SNPs
